@@ -1,0 +1,174 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: sans-serif;
+}
+
+#main {
+  min-height: 100vh;
+  width: 100%;
+}
+#top {
+  min-height: 60vh;
+  width: 100%;
+  /* background-color: gray; */
+  background-image: url(https://images.unsplash.com/photo-1696104901055-425157b698d0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80);
+  background-size: cover;
+  background-position: top;
+}
+#overlay {
+  min-height: inherit;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.312);
+  position: relative;
+}
+#text {
+  width: 100%;
+  position: absolute;
+  bottom: 20%;
+  padding: 0 10vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#text h1 {
+  font-weight: 200;
+  font-size: 6vw;
+  font-family: sans-serif;
+  color: white;
+}
+#textright {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+#textright p {
+  font-size: 12px;
+  width: 40%;
+}
+#textright i {
+  color: white;
+}
+#bottom {
+  min-height: 40vh;
+  width: 100%;
+  background-color: rgb(216, 150, 17);
+  display: flex;
+}
+
+#bone {
+  padding: 30px;
+  min-height: inherit;
+  width: 25%;
+  background-color: #fff;
+}
+#bone p {
+  font-size: 12px;
+  margin-top: 20px;
+}
+#btwo {
+  min-height: inherit;
+  width: 25%;
+  background-image: url(https://images.unsplash.com/photo-1561677978-583a8c7a4b43?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-position: center;
+  background-size: cover;
+}
+#bthree {
+  min-height: inherit;
+  width: 20%;
+  color: #fff;
+}
+#bthreetop {
+  min-height: 20vh;
+  width: 100%;
+  background-color: orangered;
+  padding: 20px;
+  /* font-size: 12px; */
+}
+#bthreetop p {
+  font-size: 10px;
+  color: #fff;
+  margin-top: 10px;
+}
+#bthreebottom {
+  min-height: 20vh;
+  width: 100%;
+  background-image: url(https://images.unsplash.com/photo-1533460004989-cef01064af7e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80);
+  background-position: center;
+  background-size: cover;
+}
+#bfour {
+  min-height: inherit;
+  width: 30%;
+  padding: 30px;
+  background-color: #444;
+  color: white;
+}
+
+.notf {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.notf #photo {
+  width: 40px;
+  height: 40px;
+  background-color: red;
+  border-radius: 50%;
+}
+
+.notf p {
+  width: 86%;
+}
+
+@media (max-width: 500px) {
+  #overlay #text {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  #text h1 {
+    font-size: 10vw;
+  }
+  #bottom {
+    min-height: 20vh;
+  }
+  #overlay #text #textright {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  #overlay #text #textright p {
+    width: initial;
+    margin-top: 20px;
+  }
+  #overlay #text #textright #icons {
+    margin: 30px;
+  }
+  #bottom {
+    flex-direction: column;
+  }
+  #bone {
+    width: 100%;
+  }
+  #btwo {
+    width: 100%;
+    min-height: 40vh;
+  }
+  #bthree {
+    width: 100%;
+  }
+  #bthreebottom {
+    min-height: 40vh;
+  }
+  #bfour {
+    width: 100%;
+  }
+}
